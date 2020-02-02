@@ -10,9 +10,6 @@ categories:
 <!-- 标签 方式，要求版本在0.4.5或以上 -->
 {% centerquote %}Hexo Markdown Writing Tips{% endcenterquote %}
 
-<!-- 标签别名 -->
-<!-- {% cq %} blah blah blah {% endcq %} -->
-
 + 代码块
 {% codeblock lang:javascript %}
 	alert("Hello World");
