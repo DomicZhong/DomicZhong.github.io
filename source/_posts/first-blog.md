@@ -8,13 +8,13 @@ categories:
 ---
 + 标题居中引用
 <!-- 标签 方式，要求版本在0.4.5或以上 -->
-{% centerquote %}Hexo Markdown Writing Tips{% endcenterquote %}
+[comment]: # ({% centerquote %}Hexo Markdown Writing Tips{% endcenterquote %})
 
 + 代码块
-{% codeblock lang:javascript %}
+[comment]: # ({% codeblock lang:javascript %}
 	alert("Hello World");
 	var myvalue = "Hello World";
-{% endcodeblock %}
+{% endcodeblock %})
 
  
 + tag中英文参考链接
@@ -38,9 +38,9 @@ class="full-image" />
 
 
 <!-- Asset 引用图片 -->
-{% asset_img land.jpg land pic%}
+[comment]: # ({% asset_img land.jpg land pic%}
 {% asset_link land.jpg %}
-{% asset_path land.jpg %}
+{% asset_path land.jpg %})
 
 
 <!-- + 分隔线
@@ -49,7 +49,7 @@ _______
  -->
  
 + 引导带
-{% note info %} Content  {% endnote %}
+[comment]: # ({% note info %} Content  {% endnote %})
 其中，class_name 可以是以下列表中的一个值：
     + default
     + primary
