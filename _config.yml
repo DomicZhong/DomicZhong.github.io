@@ -1,14 +1,16 @@
-# Hexo Configuration
+﻿# Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Allen Chung's Blog
-subtitle: 'Learning And Living Experience Share'
+title: 肩上风
+subtitle: '学习生活经验分享'
 description: '路为纸，地成册。行作笔，心当墨。'
 keywords: Young,GIS
-author: Allen Chung
-language: zh-CN
+author: Allen Zhong
+language: 
+- zh-CN
+- en
 timezone: 'Asia/Shanghai'
 
 # URL
@@ -30,6 +32,10 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+
+# music
+aplayer:
+  meting: true
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -90,6 +96,14 @@ include:
 exclude:
 ignore:
 
+# 阅读字数，时间
+symbols_count_time:
+  symbols: true                # 文章字数统计
+  time: true                   # 文章阅读时长
+  total_symbols: true          # 站点总字数统计
+  total_time: true             # 站点总阅读时长
+  exclude_codeblock: false     # 排除代码字数统计
+  
 # 站点端口设置
 server:
   port: 80
@@ -122,4 +136,8 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/DomicZhong/DomicZhong.github.io
+  branch: master
+  message: Site updated
+  token: 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
