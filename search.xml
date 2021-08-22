@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Deploy On GitLab</title>
+    <url>/2021/08/21/Deploy-On-Gitlab/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>【20200812】<br>在进行deploy时，GitHub中遇到很多问题，最终不能很好的deploy上去，后面选择了更加友好的GitLab。</p>
+<a id="more"></a>
+
+<h2 id="Deploy在GitLab上的优点"><a href="#Deploy在GitLab上的优点" class="headerlink" title="Deploy在GitLab上的优点"></a>Deploy在GitLab上的优点</h2><pre><code>+ 只需一次部署，后面就可以直接在GitLab中添加md文件，可以无需进行本地的更新
++ 部署更加方便，配置稍微简单
++ 支持https</code></pre><h2 id="使用过的命令"><a href="#使用过的命令" class="headerlink" title="使用过的命令"></a>使用过的命令</h2><p>git初始化</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<p>git添加文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+
+<p>git连接远程仓库</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote add origin https://gitlab.com/giser/giser.gitlab.io.git</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Hexo中所做的修改"><a href="#Hexo中所做的修改" class="headerlink" title="Hexo中所做的修改"></a>Hexo中所做的修改</h2><p>将theme中的”.git”文件夹以及”.gitignore”文件删除，放置报错</p>
+<p>然后更改站点”_config.yml”文件中的url,去掉blog/</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">url: https://giser.gitlab.io/</span><br><span class="line">root: /</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>blog</category>
+        <category>usage</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+        <tag>usage</tag>
+        <tag>hexo</tag>
+        <tag>deploy</tag>
+        <tag>GitLab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分享一些有趣的网站</title>
+    <url>/2020/09/04/fun-website/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>分享一些有趣的网站</p>
+<a id="more"></a>
+
+<p><a href="http://passer-by.com/relationship/" target="_blank" rel="noopener">亲戚关系计算器</a>!</p>
+<iframe src='http://passer-by.com/relationship/' frameborder='0' scrolling='no' style='width:100%;height:600px;' security="restricted" sandbox="allow-scripts"></iframe>
+
+
+<p><a href="https://www.v2fy.com/p/000readme-chinesebqb/" target="_blank" rel="noopener">中国人的表情包</a>!</p>
+<iframe src='https://www.v2fy.com/p/000readme-chinesebqb/' frameborder='0' scrolling='no' style='width:100%;height:600px;'></iframe>
+
+
+<p><a href="https://suulnnka.github.io/BullshitGenerator/index.html" target="_blank" rel="noopener">狗屁不通文章生成器</a>!</p>
+<iframe src='https://suulnnka.github.io/BullshitGenerator/index.html' frameborder='0' scrolling='no' style='width:100%;height:600px;'></iframe>
+
+
+<p><a href="https://zzkia.noddl.me:8020/" target="_blank" rel="noopener">诺基亚短信生成器</a>!</p>
+<iframe src='https://zzkia.noddl.me:8020/' frameborder='0' scrolling='no' style='width:100%;height:600px;'></iframe>
+
+<p><a href="http://www.nows.fun/" target="_blank" rel="noopener">毒鸡汤</a>!</p>
+<iframe src='http://www.nows.fun/' frameborder='0' scrolling='no' style='width:100%;height:600px;'></iframe>
+
+<p><a href="https://humanbenchmark.com/tests/reactiontime" target="_blank" rel="noopener">Click to start(测试反应）</a>!<br>lling=’no’ style=’width:100%;height:600px;’ &gt;</iframe></p>
+<p><a href="https://www.cbaigui.com/" target="_blank" rel="noopener">知妖-收集中国古今妖怪</a>!</p>
+<p><a href="https://theuselessweb.com/" target="_blank" rel="noopener">一个每次打开都会出现一个小众网站的网站</a>!</p>
+<p><a href="https://thispersondoesnotexist.com/" target="_blank" rel="noopener">AI生成人像</a>!</p>
+<iframe src='https://thispersondoesnotexist.com/' frameborder='0' scrolling='no' style='width:100%;height:600px;'></iframe>
+
+<p><a href="https://www.remove.bg/zh" target="_blank" rel="noopener">在线抠图软件</a>!</p>
+<p><a href="http://www.staggeringbeauty.com/" target="_blank" rel="noopener">越摇摆越快乐</a>!</p>
+<iframe src='http://www.staggeringbeauty.com/' frameborder='0' scrolling='no' style='width:100%;height:600px;' ></iframe>
+
+<p><a href="http://www.sketchswap.com/" target="_blank" rel="noopener">一画换一画</a>!</p>
+<iframe src='http://www.sketchswap.com/' frameborder='0' scrolling='no' style='width:100%;height:600px;'  sandbox=""></iframe>
+
+
+
+]]></content>
+      <categories>
+        <category>fun</category>
+        <category>website</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>数据可视化实战</title>
+    <url>/2020/03/22/DataVisualization/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>今天尝试了一个有趣的数据可视化网站，制作了一张世界各国GDP从1960年到2018年的变化图。</p>
+<a id="more"></a>
+
+<p>不废话，上图！</p>
+<iframe src='https://public.flourish.studio/visualisation/1644005/embed' frameborder='0' scrolling='no' style='width:100%;height:600px;'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/1644005/?utm_source=embed&utm_campaign=visualisation/1644005' target='_top' style='text-decoration:none!important'> </a></div>
+]]></content>
+      <categories>
+        <category>Visualization</category>
+        <category>flourish</category>
+      </categories>
+      <tags>
+        <tag>visualization</tag>
+        <tag>flourish</tag>
+        <tag>GDP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python自动发送qq邮件</title>
+    <url>/2020/02/29/python-email/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="使用python-自动发送qq邮件"><a href="#使用python-自动发送qq邮件" class="headerlink" title="使用python 自动发送qq邮件"></a>使用python 自动发送qq邮件</h1><p><a href="https://www.runoob.com/python3/python3-smtp.html" target="_blank" rel="noopener">参考教程</a><br><a href="https://www.cnblogs.com/axinno1/p/8303130.html" target="_blank" rel="noopener">参考博客</a></p>
+<a id="more"></a>
+
+<p>目前有个需求就是在阿里云服务器上跑不间断抓取数据的python程序，程序有时会出现bug，因为不可能随时随地都看着程序运行，所以就想到能不能在报错的时候让程序自动发送qq邮件给我，从而及时的通知程序的异常信息。</p>
+<p>查了一下相关资料，可以通过SMTP（Simple Mail Transfer Protocol, 即简单邮件传输协议）的方式发送邮件。主要分为3个步骤：</p>
+<h2 id="获取qq邮箱授权码"><a href="#获取qq邮箱授权码" class="headerlink" title="获取qq邮箱授权码"></a>获取qq邮箱授权码</h2><p>首先网页登录qq邮箱，【设置】-&gt;【账户】-&gt;【POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务】，点击开启POP3/SMTP服务,生成授权码。然后按要求发送短信到相关号码，就会得到一串16位的授权码，注意保管好这个授权码，可以多次使用。</p>
+<img src="/2020/02/29/python-email/SMTP%E5%BC%80%E5%90%AF%E5%8F%8A%E7%94%9F%E6%88%90%E6%8E%88%E6%9D%83%E7%A0%81.jpg" class="" title="SMTP开启及生成授权码">
+
+<h2 id="python发邮件代码"><a href="#python发邮件代码" class="headerlink" title="python发邮件代码"></a>python发邮件代码</h2><p>在获得授权码后就可以开始coding了，有个注意点是由于阿里云默认会禁用SMTP的25端口，所以<strong>SMTP的端口需要改为587</strong>，下面把代码分享给大家。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">SendEmail</span><span class="params">(mail_string)</span>:</span></span><br><span class="line">    <span class="keyword">import</span> smtplib</span><br><span class="line">    <span class="keyword">from</span> email.mime.text <span class="keyword">import</span> MIMEText</span><br><span class="line">    <span class="keyword">from</span> email.header <span class="keyword">import</span> Header</span><br><span class="line">     </span><br><span class="line">    <span class="comment"># 第三方 SMTP 服务</span></span><br><span class="line">    mail_host=<span class="string">'smtp.qq.com'</span>  <span class="comment">#设置服务器</span></span><br><span class="line">    mail_user=<span class="string">'****'</span>   <span class="comment">#用户名, qq号</span></span><br><span class="line">    mail_pass=<span class="string">'****'</span>   <span class="comment"># 16位口令</span></span><br><span class="line">     </span><br><span class="line">     </span><br><span class="line">    sender = <span class="string">'****@qq.com'</span>    <span class="comment">#  你的邮箱</span></span><br><span class="line">    receivers = [<span class="string">'****@qq.com'</span>]  <span class="comment"># 接收邮件，可设置为你的QQ邮箱或者其他邮箱</span></span><br><span class="line">     </span><br><span class="line">    message = MIMEText(mail_string, <span class="string">'plain'</span>, <span class="string">'utf-8'</span>) <span class="comment"># 邮件正文</span></span><br><span class="line">    message[<span class="string">'From'</span>] = Header(<span class="string">"发件人名字"</span>, <span class="string">'utf-8'</span>)</span><br><span class="line">    message[<span class="string">'To'</span>] =  Header(<span class="string">"收件人名字"</span>, <span class="string">'utf-8'</span>)</span><br><span class="line">     </span><br><span class="line">    subject = <span class="string">'拥堵抓取程序报错'</span>  <span class="comment"># 标题</span></span><br><span class="line">    message[<span class="string">'Subject'</span>] = Header(subject, <span class="string">'utf-8'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        smtpObj = smtplib.SMTP() </span><br><span class="line">        smtpObj.connect(mail_host, <span class="number">587</span>)    <span class="comment"># 587 为 SMTP 端口号</span></span><br><span class="line">        smtpObj.login(mail_user,mail_pass)</span><br><span class="line">        smtpObj.sendmail(sender, receivers, message.as_string())</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">"邮件发送成功"</span>)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e : <span class="comment">#smtplib.SMTPException e:</span></span><br><span class="line">        print(repr(e))</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">"Error: 无法发送邮件"</span>)</span><br><span class="line">        <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">            SendEmail(mail_string)</span><br><span class="line">            time.sleep(<span class="number">5</span>)</span><br><span class="line">			</span><br><span class="line">mail_string = <span class="string">"时间:2020-02-29 16:37:10\n成功：40.0,总数40,比率1.0"</span>	</span><br><span class="line">SendEmail(mail_string)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="查看效果"><a href="#查看效果" class="headerlink" title="查看效果"></a>查看效果</h2><p>这是发送成功的邮件截图</p>
+<img src="/2020/02/29/python-email/%E9%82%AE%E4%BB%B6%E6%88%AA%E5%9B%BE.png" class="" title="邮件截图">
+
+
+
+]]></content>
+      <categories>
+        <category>tool</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>email</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/02/13/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="博客创建指南"><a href="#博客创建指南" class="headerlink" title="博客创建指南"></a>博客创建指南</h2><ul>
+<li><p>工具 hexo</p>
+</li>
+<li><p>theme next</p>
+</li>
+</ul>
+<p><a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">博客创建教程</a></p>
+<a id="more"></a>
+
+<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>blog</category>
+        <category>usage</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+        <tag>usage</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件使用分享</title>
+    <url>/2020/02/13/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>软件分享列表</p>
+<ul>
+<li>LocalSpaceViewer</li>
+<li>ExcelMapsV2.7.12.0</li>
+<li>DataMap6</li>
+</ul>
+<a id="more"></a>
+
+
+<p>昨天在抓取自然科学基金的申请数据的时候，突然想分析一下这些数据，于是乎就想也没用在excel中使用的一些插件，可以方便一些地理数据的转换和分析，于是网上多番查找，找到了两个Excel中的地图插件，<a href="http://www.gis9.com/Index.html" target="_blank" rel="noopener">ExcelMapsV2.7.12.0</a> 和 <a href="https://zhuanlan.zhihu.com/p/30698158" target="_blank" rel="noopener">DataMap6</a>。<br>他们都具备正逆地理编码的功能，同时还有非常强的可视化功能，结合excel 数据透视表的功能，很值得一试。<br>不过DataMap6有30天的试用期，而ExcelMapsV2.7.12.0在登陆后目前不受限制。</p>
+<p>还有就是<a href="http://www.locaspace.cn/" target="_blank" rel="noopener">LocalSpaceViewer</a> 图新地球4这个软件，用于标注展示地理信息很方便，有很多底图供使用。</p>
+]]></content>
+      <categories>
+        <category>tool</category>
+        <category>usage</category>
+      </categories>
+      <tags>
+        <tag>usage</tag>
+        <tag>gis</tag>
+        <tag>excel</tag>
+        <tag>map</tag>
+        <tag>tool</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo使用时遇到的坑</title>
+    <url>/2020/02/10/tech_problem/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>【20200210】<br>在添加阅读字数，时间时碰到NaN的问题，结果发现需要使用 hexo clean 命令就可以解决。</p>
+<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>blog</category>
+        <category>usage</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+        <tag>usage</tag>
+        <tag>hexo</tag>
+        <tag>tech</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>First Blog——Markdown 使用技术总结</title>
+    <url>/2020/02/02/first-blog/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="Markdown-写作方式总结以及资源分享"><a href="#Markdown-写作方式总结以及资源分享" class="headerlink" title="Markdown 写作方式总结以及资源分享"></a>Markdown 写作方式总结以及资源分享</h1><p>首先分享博客创建历程<br>【20200202 更新】<br>用了一天终于在2020年2月2日（20200202，是个吉祥的数字）这天把博客搭建好了，域名备案正在进行。<br>【20200210 更新】<br>收到<a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">工业和信息化部网站备案系统</a> 的邮件，等待了11天的备案终于成功，第一时间把博客挂上去，开心。<br>ICP, Internet Content Provider 网络内容服务商，即向广大用户综合提供互联网信息业务和增值业务的电信运营商。</p>
+<a id="more"></a>
+
+<p>【20200213 更新】<br>在ICP备案后还需要到<a href="http://www.beian.gov.cn/portal/index" target="_blank" rel="noopener">公网安备案</a><br>公网安备案时需要提供的<a href="https://developer.aliyun.com/ask/7593?spm=a2c6h.13066354.0.0.5a1433b5zqqjLm" target="_blank" rel="noopener">阿里云信息</a></p>
+<img src="/2020/02/02/first-blog/%E5%A4%87%E6%A1%88%E6%88%90%E5%8A%9F%E9%82%AE%E4%BB%B6.png" class="" title="ICP备案成功邮件">
+
+<p>【20200217 更新】<br>收到公网安备案的短信，备案成功，之前打回去两次，总结一下经验。<br>首先是公网安备案时需要提供的<a href="https://developer.aliyun.com/ask/7593?spm=a2c6h.13066354.0.0.5a1433b5zqqjLm" target="_blank" rel="noopener">阿里云信息</a><br>其次是个人网站备案不能选交互式。</p>
+<img src="/2020/02/02/first-blog/%E5%85%AC%E7%BD%91%E5%AE%89%E5%A4%87%E6%A1%88%E4%BF%A1%E6%81%AF%E6%88%AA%E5%9B%BE.png" class="" title="公网安备案信息">
+
+<img src="/2020/02/02/first-blog/%E5%85%AC%E7%BD%91%E5%AE%89%E5%A4%87%E6%A1%88%E7%BC%96%E5%8F%B7.png" class="" title="公网安备案编号">
+
+<h2 id="标题居中引用"><a href="#标题居中引用" class="headerlink" title="标题居中引用"></a>标题居中引用</h2><!-- 标签 方式，要求版本在0.4.5或以上 -->
+<blockquote class="blockquote-center"><p>Hexo Markdown Writing Tips</p>
+</blockquote>
+
+
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">alert(<span class="string">"Hello World"</span>);</span><br><span class="line"><span class="keyword">var</span> myvalue = <span class="string">"Hello World"</span>;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="tag中英文参考链接"><a href="#tag中英文参考链接" class="headerlink" title="tag中英文参考链接"></a>tag中英文参考链接</h2><p><a href="https://hexo.io/docs/tag-plugins" target="_blank" rel="noopener">tag-plugins</a><br><a href="http://theme-next.iissnan.com/tag-plugins.html" target="_blank" rel="noopener">tag-plugins chinese</a><br><a href="http://theme-next.iissnan.com/faqs.html" target="_blank" rel="noopener">tag-plugins chinese faq</a></p>
+<h2 id="markdown-语法参考"><a href="#markdown-语法参考" class="headerlink" title="markdown 语法参考"></a>markdown 语法参考</h2><p><a href="https://www.w3cschool.cn/markdownyfsm/markdownyfsm-odm6256r.html" target="_blank" rel="noopener">markdown W3Cschool</a><br><a href="https://editor.csdn.net/md/" target="_blank" rel="noopener">markdown csdn</a></p>
+<!-- 标签 方式，要求版本在0.4.5或以上 -->
+<!-- 图片地址、 alt (悬停提示)和 title（标题） 属性-->
+<p><img src="https://wonderfulengineering.com/wp-content/uploads/2014/07/Landscape-wallpapers-20.jpg"
+alt="Click Me"
+title = "Landscape"
+class="full-image" /></p>
+<!-- Asset 引用图片 -->
+<img src="/2020/02/02/first-blog/land.jpg" class="" title="land pic">
+<a href="/2020/02/02/first-blog/land.jpg" title="land.jpg">land.jpg</a>
+/2020/02/02/first-blog/land.jpg
+
+<hr>
+<h2 id="引导带"><a href="#引导带" class="headerlink" title="引导带"></a>引导带</h2><p>其中，class_name 可以是以下列表中的一个值：<br>    + default<br>    + primary<br>    + success<br>    + info<br>    + warning<br>    + danger</p>
+<h2 id="音乐设置（见右上角）"><a href="#音乐设置（见右上角）" class="headerlink" title="音乐设置（见右上角）"></a>音乐设置（见右上角）</h2><div id="dg" style="z-index: 9999; position: fixed ! important; right: 0px; top: 0px;">
+<!-- Simple example (id, server, type)  -->
+
+    <div id="aplayer-MlULJavi" class="aplayer aplayer-tag-marker meting-tag-marker"
+         data-id="502192384" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-listfolded="true" data-mini="true"
+    ></div>
+</div>
+
+
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>电脑</td>
+<td>4199</td>
+</tr>
+<tr>
+<td>手机</td>
+<td>2120</td>
+</tr>
+</tbody></table>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
+<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,<br>consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<br>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+</blockquote>
+<h2 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h2><ul>
+<li>斜体</li>
+</ul>
+<p><em>single asterisks</em><br><em>single asterisks</em></p>
+<ul>
+<li>强调</li>
+</ul>
+<p><strong>single asterisks</strong><br><strong>single asterisks</strong></p>
+<ul>
+<li>代码块<br><code>code here</code><br><code>code here</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>blog</category>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+        <tag>hexo</tag>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+</search>
