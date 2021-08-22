@@ -9,6 +9,7 @@ tags: [blog,usage,hexo,deploy,GitLab]
 
 【20200812】
 在进行deploy时，GitHub中遇到很多问题，最终不能很好的deploy上去，后面选择了更加友好的GitLab。
+[GitLab Blog](https://giser.gitlab.io/)
 
 <!-- more -->
 
