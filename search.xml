@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Deploy on GitHub</title>
+    <url>/2021/08/22/Deploy-on-GitHub/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>【20200822】<br>今天终于将网站Deploy到Github上了，下面记录一下过程<br><a href="https://domiczhong.github.io/" target="_blank" rel="noopener">GitHub Blog</a></p>
+<a id="more"></a>
+
+<h2 id="Deploy在GitHub上的优点-与GitLab一致"><a href="#Deploy在GitHub上的优点-与GitLab一致" class="headerlink" title="Deploy在GitHub上的优点,与GitLab一致"></a>Deploy在GitHub上的优点,与GitLab一致</h2><pre><code>+ 只需一次部署，后面就可以直接在GitHub中添加md文件，可以无需进行本地的更新
++ 部署更加方便，配置稍微简单
++ 支持https</code></pre><h2 id="使用过的命令"><a href="#使用过的命令" class="headerlink" title="使用过的命令"></a>使用过的命令</h2><p>git初始化</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<p>git添加文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+
+<p>git连接远程仓库</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote add origin https://github.com/DomicZhong/DomicZhong.github.io.git</span><br></pre></td></tr></table></figure>
+
+<p>将branch切换到source中，当source更新后自动会在主页显示<br>git切换Branch</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git switch <span class="built_in">source</span></span><br></pre></td></tr></table></figure>
+
+<p>自动部署的原理是来源于添加了yml配置文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.github/workflows/pages.yml</span><br><span class="line">name: Pages</span><br><span class="line"></span><br><span class="line">on:</span><br><span class="line">  push:</span><br><span class="line">    branches:</span><br><span class="line">      - <span class="built_in">source</span>  <span class="comment"># default branch</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">jobs</span>:</span><br><span class="line">  pages:</span><br><span class="line">    runs-on: ubuntu-latest</span><br><span class="line">    steps:</span><br><span class="line">      - uses: actions/checkout@v2</span><br><span class="line">      - name: Use Node.js 12.x</span><br><span class="line">        uses: actions/setup-node@v1</span><br><span class="line">        with:</span><br><span class="line">          node-version: <span class="string">'12.x'</span></span><br><span class="line">      - name: Cache NPM dependencies</span><br><span class="line">        uses: actions/cache@v2</span><br><span class="line">        with:</span><br><span class="line">          path: node_modules</span><br><span class="line">          key: <span class="variable">$&#123;&#123; runner.OS &#125;</span>&#125;-npm-cache</span><br><span class="line">          restore-keys: |</span><br><span class="line">            <span class="variable">$&#123;&#123; runner.OS &#125;</span>&#125;-npm-cache</span><br><span class="line">      - name: Install Dependencies</span><br><span class="line">        run: npm install</span><br><span class="line">      - name: Build</span><br><span class="line">        run: npm run build</span><br><span class="line">      - name: Deploy</span><br><span class="line">        uses: peaceiris/actions-gh-pages@v3</span><br><span class="line">        with:</span><br><span class="line">          github_token: <span class="variable">$&#123;&#123; secrets.GITHUB_TOKEN &#125;</span>&#125;</span><br><span class="line">          publish_dir: ./public</span><br><span class="line">          publish_branch: master  <span class="comment"># deploying branch</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Hexo中所做的修改"><a href="#Hexo中所做的修改" class="headerlink" title="Hexo中所做的修改"></a>Hexo中所做的修改</h2><p>在GitLab的基础上，进行如下更新<br>删除next中“languages”文件夹内的md文件，不然会报错</p>
+]]></content>
+      <tags>
+        <tag>blog</tag>
+        <tag>usage</tag>
+        <tag>hexo</tag>
+        <tag>deploy</tag>
+        <tag>GitHub</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Deploy On GitLab</title>
     <url>/2021/08/21/Deploy-On-Gitlab/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>【20200812】<br>在进行deploy时，GitHub中遇到很多问题，最终不能很好的deploy上去，后面选择了更加友好的GitLab。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>【20200812】<br>在进行deploy时，GitHub中遇到很多问题，最终不能很好的deploy上去，后面选择了更加友好的GitLab。<br><a href="https://giser.gitlab.io/">GitLab Blog</a></p>
 <a id="more"></a>
 
 <h2 id="Deploy在GitLab上的优点"><a href="#Deploy在GitLab上的优点" class="headerlink" title="Deploy在GitLab上的优点"></a>Deploy在GitLab上的优点</h2><pre><code>+ 只需一次部署，后面就可以直接在GitLab中添加md文件，可以无需进行本地的更新
