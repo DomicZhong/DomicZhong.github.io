@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>github编辑测试</title>
+    <url>/2021/10/26/newpost/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>软件分享列表</p>
+<ul>
+<li>LocalSpaceViewer</li>
+<li>ExcelMapsV2.7.12.0</li>
+<li>DataMap6</li>
+</ul>
+<a id="more"></a>
+
+
+<p>昨天在抓取自然科学基金的申请数据的时候，突然想分析一下这些数据，于是乎就想也没用在excel中使用的一些插件，可以方便一些地理数据的转换和分析，于是网上多番查找，找到了两个Excel中的地图插件，<a href="http://www.gis9.com/Index.html" target="_blank" rel="noopener">ExcelMapsV2.7.12.0</a> 和 <a href="https://zhuanlan.zhihu.com/p/30698158" target="_blank" rel="noopener">DataMap6</a>。<br>他们都具备正逆地理编码的功能，同时还有非常强的可视化功能，结合excel 数据透视表的功能，很值得一试。<br>不过DataMap6有30天的试用期，而ExcelMapsV2.7.12.0在登陆后目前不受限制。</p>
+<p>还有就是<a href="http://www.locaspace.cn/" target="_blank" rel="noopener">LocalSpaceViewer</a> 图新地球4这个软件，用于标注展示地理信息很方便，有很多底图供使用。</p>
+]]></content>
+      <categories>
+        <category>usage</category>
+        <category>tool</category>
+      </categories>
+      <tags>
+        <tag>usage</tag>
+        <tag>gis</tag>
+        <tag>excel</tag>
+        <tag>map</tag>
+        <tag>tool</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Deploy on GitHub</title>
     <url>/2021/08/22/Deploy-on-GitHub/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>【20200822】<br>今天终于将网站Deploy到Github上了，下面记录一下过程<br><a href="https://domiczhong.github.io/" target="_blank" rel="noopener">GitHub Blog</a></p>
