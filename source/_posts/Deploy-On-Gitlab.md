@@ -17,6 +17,8 @@ tags: [blog,usage,hexo,deploy,GitLab]
     + 只需一次部署，后面就可以直接在GitLab中添加md文件，可以无需进行本地的更新
     + 部署更加方便，配置稍微简单
     + 支持https
+## Deploy在GitLab上的缺点
+    + 需要登录才能查看，不方便没有GitLab的人使用
 
 ## 使用过的命令
 
