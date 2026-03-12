@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 肩上风
-subtitle: 'GIS学习生活经验分享'
+title: Allen Zhong's Blog
+subtitle: 'Cloud, GIS学习生活经验分享'
 description: '路为纸，地成册。行作笔，心当墨。'
-keywords: Young,GIS
-author: Allen ZHONG
+keywords: Cloud,GIS
+author: Allen Zhong
 language: 
 - zh-CN
 - en
@@ -15,7 +15,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://giser.gitlab.io/
+url: https://domiczhong.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

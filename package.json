@@ -9,11 +9,11 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "4.2.0"
+    "version": "8.1.1"
   },
   "dependencies": {
     "eslint": "^6.8.0",
-    "hexo": "^4.0.0",
+    "hexo": "^8.1.1",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^1.0.0",
